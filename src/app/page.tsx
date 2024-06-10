@@ -1,113 +1,68 @@
+import * as React from "react";
 import Image from "next/image";
+import { Funds, Services, Practice } from "@/app/components";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+    <div className="flex flex-col">
+      <main className="flex flex-col items-center px-16 pt-3.5 w-full max-md:px-5 max-md:max-w-full">
+        <section className="self-center mt-14 text-5xl text-center text-teal-500 uppercase max-md:mt-10 max-md:max-w-full max-md:text-4xl">
+          <span className="text-6xl">E</span>rsoy{" "}
+          <span className="text-6xl">K</span>umsuz{" "}
+          <span className="text-6xl">D</span>ental{" "}
+          <span className="text-6xl">S</span>urgeon
+        </section>
+        <h2 className="self-center mt-7 text-2xl text-black capitalize tracking-[6.25px] max-md:max-w-full">
+          General Implant & Cosmetic Dentistry
+        </h2>
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/e1002d2f5ae084a61b9155fda979e40577a995a9b700057bf83671652f29edfe?apiKey=1c365991cad646539ab14038066c3ab4&"
+          alt="Dental office"
+          className="mt-12 w-full aspect-[3.23] max-md:mt-10 max-md:max-w-full"
         />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+        <section className="w-full max-md:max-w-full">
+          <div className="flex gap-5 max-md:flex-col max-md:gap-0">
+            <div className="flex flex-col w-[54%] max-md:ml-0 max-md:w-full">
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/eb3c0c2d027696e9c1c5b305019cfa089b1e21b8d44e9c151a792627f3e721f4?apiKey=1c365991cad646539ab14038066c3ab4&"
+                alt="Dental procedure"
+                className="grow w-full aspect-[1.49] max-md:mt-10 max-md:max-w-full"
+              />
+            </div>
+            <article className="flex flex-col ml-5 w-[46%] max-md:ml-0 max-md:w-full">
+              <div className="flex flex-col self-stretch px-5 my-auto max-md:mt-10 max-md:max-w-full min-[1704px]:pt-0 pt-12">
+                <h3 className="text-5xl text-teal-500 leading-[60px] max-md:max-w-full max-md:text-4xl max-md:leading-[53px]">
+                  Ersoy Kumsuz Dental Surgeon
+                </h3>
+                <p className="mt-8 text-base leading-8 text-stone-500 max-md:max-w-full">
+                  We aim to provide first class dental care in a relaxed yet
+                  professional atmosphere with competitive affordable pricing.
+                </p>
+                <p className="mt-8 text-base leading-8 text-stone-500 max-md:max-w-full">
+                  We are located on the corner of Helena st and Auburn Rd in
+                  Auburn and have been offering Dental Services in the area
+                  since 2002. We aim to provide the highest level of treatment
+                  at very competitive pricing ensuring quality dental treatment
+                  is available to all in the community.
+                </p>
+                <div className="flex flex-col justify-center items-start px-3 py-2 mt-9 bg-white border border-solid border-stone-300 max-md:pr-5 max-md:max-w-full">
+                  <img
+                    loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/29cdda9c05d019c9b56d417e467b56e9eff61231b3a7ca42b698aa1ec54a7e63?apiKey=1c365991cad646539ab14038066c3ab4&"
+                    alt="Dental tools"
+                    className="max-w-full aspect-[2.17] w-[324px]"
+                  />
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+        <Services />
+        <Practice />
+        <Funds />
+      </main>
+    </div>
   );
 }
