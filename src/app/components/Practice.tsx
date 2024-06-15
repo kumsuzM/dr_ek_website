@@ -13,7 +13,7 @@ const Practice = () => {
           src="/our_prac_1.jpg"
           width={470}
           height={450}
-          alt="imamge of practice"
+          alt="image of practice"
           className="rounded-lg hover:scale-105 transition duration-300 ease-in-out"
         />
         <Image
@@ -21,7 +21,7 @@ const Practice = () => {
           src="/our_prac_2.jpg"
           width={470}
           height={450}
-          alt="imamge of practice"
+          alt="image of practice"
           className="rounded-lg hover:scale-105 transition duration-300 ease-in-out"
         />
         <Image
@@ -29,7 +29,7 @@ const Practice = () => {
           src="/our_prac_3.jpg"
           width={470}
           height={450}
-          alt="imamge of practice"
+          alt="image of practice"
           className="rounded-lg hover:scale-105 transition duration-300 ease-in-out"
         />
       </div>
