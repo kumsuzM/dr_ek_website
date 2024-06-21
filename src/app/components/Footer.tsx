@@ -14,7 +14,7 @@ interface IconCardProps {
 
 const IconCard: React.FC<IconCardProps> = ({ icon, label }) => (
   <div className="flex flex-col px-14 w-10/12 mx-auto sm:text-lg text-white bg-stone-900 max-md:px-5 max-md:mt-4">
-    <div className="-mt-8 flex z-10 flex-col justify-center items-center self-center font-black whitespace-nowrap bg-teal-500 rounded-full h-[69px] leading-[120%] w-[69px]">
+    <div className="-mt-8 flex z-10 flex-col justify-center items-center self-center font-black bg-teal-500 rounded-full h-[69px] leading-[120%] w-[69px]">
       {icon}
     </div>
     <div className="mt-3 py-3 max-w-full text-center">{label}</div>

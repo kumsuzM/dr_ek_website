@@ -15,17 +15,18 @@ const NavLink = ({ href, children }: NavLinkProps) => {
 
   return (
     <div
-      className={`flex flex-col self-stretch ${isActive ? "text-teal-500" : "text-black"}`}
+      className={`flex flex-col justify-center self-stretch ${isActive ? "text-teal-500" : "text-black"}`}
     >
-      <Link href={href} className="group hover:text-teal-500">
+      <Link
+        href={href}
+        className="group hover:text-teal-500 text-lg text-center"
+      >
         {children}
         {!isActive && (
           <span className="block max-w-0 group-hover:max-w-full transition-all duration-200 h-[3px] bg-teal-500"></span>
         )}
       </Link>
-      {isActive && (
-        <div className="shrink-0 bg-teal-500 h-[3px] max-md:mt-10" />
-      )}
+      {isActive && <div className="shrink-0 bg-teal-500 h-[3px]" />}
     </div>
   );
 };
