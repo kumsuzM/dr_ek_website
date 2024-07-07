@@ -50,7 +50,7 @@ const Navbar = () => {
 
   return (
     <header className="flex flex-col items-center w-full bg-aqua-secondary">
-      {/* First part of navbar with contact info */}
+      {/* Top part of navbar with contact info */}
       <section className="flex flex-wrap justify-around gap-5 px-16 py-4 w-full text-white bg-teal-500 max-md:px-5 max-md:max-w-full">
         <ContactInfo
           icon={<MdMailOutline size={28} />}
@@ -62,7 +62,7 @@ const Navbar = () => {
         />
         <ContactInfo
           icon={<IoTimeOutline size={30} />}
-          info="Opening hours: Monday to Saturday 9.00am-4.00pm"
+          info="Opening hours: Monday to Saturday 9.00am - 4.00pm"
         />
       </section>
 

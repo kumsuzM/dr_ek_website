@@ -30,7 +30,7 @@ export default function Team() {
     <PageLayout title="Our Team">
       <div className="mt-32 max-md:mb-10 gap-36 flex flex-col container max-w-[80%]">
         <TeamMember name="Dr Ersoy Kumsuz (B.D.S)" image="/ek_headshot.jpg">
-          Ersoy graduated in 1998 from the University of Sydney . He spent 4
+          Ersoy graduated in 1998 from the University of Sydney. He spent 4
           years in the Australian Defense Force as a full time Dental Officer
           based in Darwin, Sydney and East Timor before opening his own dental
           practice in Auburn in 2002.

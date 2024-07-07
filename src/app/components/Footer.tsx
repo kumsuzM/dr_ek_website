@@ -59,7 +59,10 @@ const Footer = () => {
             icon={<MdMailOutline size={30} />}
             label="info@drersoykumsuz.com.au"
           />
-          <IconCard icon={<FaPhone size={27} />} label="(02) 9749 2581" />
+          <IconCard
+            icon={<FaPhone size={27} />}
+            label="(02) 97492581 / 0426845041"
+          />
           <IconCard
             icon={<IoTimeOutline size={30} />}
             label="Monday to Saturday 9.00am&mdash;4.00pm"

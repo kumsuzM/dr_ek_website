@@ -46,7 +46,7 @@ export default function Home() {
                 competitive pricing ensuring quality dental treatment is
                 available to all in the community.
               </p>
-              <div className="flex flex-col justify-center items-start px-3 py-2 mt-9 bg-white border border-solid border-stone-300 max-md:pr-5 max-md:max-w-full">
+              <div className="flex flex-col justify-center items-center px-3 py-2 mt-9 max-md:pr-5 max-md:max-w-full">
                 <img
                   loading="lazy"
                   src="https://cdn.builder.io/api/v1/image/assets/TEMP/29cdda9c05d019c9b56d417e467b56e9eff61231b3a7ca42b698aa1ec54a7e63?apiKey=1c365991cad646539ab14038066c3ab4&"

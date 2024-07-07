@@ -41,7 +41,7 @@ const ScrollingRow: React.FC<ScrollingRowProps> = ({ row_num, reverse }) => {
   animation = shouldAnimate ? animation : "";
 
   return (
-    <div className="flex overflow-hidden">
+    <div className="flex overflow-hidden space-x-16">
       <div className={`flex space-x-16 ${animation}`}>
         {Array.from({ length: 14 }, (_, i) => i + offset).map((logo_number) => (
           <FundLogo key={logo_number} logo_number={logo_number} />

@@ -31,6 +31,8 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
 );
 
 const Services = () => {
+  // TODO: replace these services with the ones from the content.ts file
+  // but cap the description and only use the first image
   const services = [
     {
       src: "https://cdn.builder.io/api/v1/image/assets/TEMP/0998bf8fe1d1b74c0c4c84c323042b6730f907dc869a59ae99619ab291b41777?apiKey=1c365991cad646539ab14038066c3ab4&",
