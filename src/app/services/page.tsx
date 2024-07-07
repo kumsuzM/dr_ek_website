@@ -20,6 +20,7 @@ const ServiceSection = ({ title, text, images }: ServiceSectionProps) => (
         <div className="flex flex-col gap-8 ml-5 w-[40%] max-lg:ml-0 max-lg:w-full">
           {images.map((image) => (
             <img
+              key={image.src}
               loading="lazy"
               src={image.src}
               alt={image.alt}
