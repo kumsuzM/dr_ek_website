@@ -56,7 +56,6 @@ export default function Services() {
           images={service.images}
         />
       ))}
-      <h1 id="hello">hello there</h1>
     </PageLayout>
   );
 }
