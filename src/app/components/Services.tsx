@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 interface ServiceCardProps {
@@ -23,9 +24,12 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
       <div className="self-stretch mx-3 mt-7 text-base leading-8 text-zinc-800 max-md:mr-2.5 max-md:max-w-full">
         {description}
       </div>
-      <button className="justify-center px-14 py-6 mt-11 text-lg text-white bg-teal-500 max-md:px-5 max-md:mt-10 hover:scale-95 transition duration-300 ease-in-out">
+      <Link
+        href={`/services#${title.toLowerCase().split(" ").join("-")}`}
+        className="justify-center px-14 py-6 mt-11 text-lg text-white bg-teal-500 max-md:px-5 max-md:mt-10 hover:scale-95 transition duration-300 ease-in-out"
+      >
         Learn More
-      </button>
+      </Link>
     </div>
   </div>
 );

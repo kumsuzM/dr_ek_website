@@ -2,6 +2,25 @@ import * as React from "react";
 import Image from "next/image";
 import { Funds, Services, Practice } from "@/app/components";
 
+const CroppedSidesImage = () => {
+  return (
+    <div className="relative w-full h-64 overflow-hidden">
+      <div className="absolute inset-0 -mx-8">
+        {" "}
+        {/* Adjust -mx-8 to crop more or less */}
+        <Image
+          loading="lazy"
+          src="/ek_hands_crossed.jpg"
+          alt="Dental office"
+          layout="fill"
+          objectFit="cover"
+          objectPosition="center"
+        />
+      </div>
+    </div>
+  );
+};
+
 export default function Home() {
   return (
     <main className="flex flex-col items-center w-full max-md:px-5 max-md:max-w-full">
@@ -14,32 +33,40 @@ export default function Home() {
       <h2 className="self-center text-center mt-7 text-2xl text-black capitalize tracking-[6.25px] max-md:max-w-full">
         General Implant & Cosmetic Dentistry
       </h2>
-      <img
-        loading="lazy"
-        src="https://cdn.builder.io/api/v1/image/assets/TEMP/e1002d2f5ae084a61b9155fda979e40577a995a9b700057bf83671652f29edfe?apiKey=1c365991cad646539ab14038066c3ab4&"
-        alt="Dental office"
-        className="mt-12 w-full max-md:mt-10 max-md:max-w-full"
-      />
-      <section className="w-full max-md:max-w-full">
-        <div className="flex gap-5 max-md:flex-col max-md:gap-0">
-          <div className="flex flex-col w-[54%] max-md:ml-0 max-md:w-full">
-            <img
+      <div className="relative w-full h-auto" style={{ height: "auto" }}>
+        <Image
+          loading="lazy"
+          src="/ek_hands_crossed.jpg"
+          alt="Dental office"
+          width={1920}
+          height={1080}
+          unoptimized
+          className="mt-12 w-full max-md:mt-10 max-md:max-w-full"
+        />
+      </div>
+      <section className="w-full max-lg:max-w-full">
+        <div className="flex gap-5 max-lg:flex-col max-lg:gap-0">
+          <div className="flex flex-col w-[54%] max-lg:ml-0 max-lg:w-full">
+            <Image
               loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/eb3c0c2d027696e9c1c5b305019cfa089b1e21b8d44e9c151a792627f3e721f4?apiKey=1c365991cad646539ab14038066c3ab4&"
+              src="/reception_2.jpg"
+              height={400}
+              width={400}
               alt="Dental procedure"
+              unoptimized
               className="grow w-full aspect-[1.49] max-md:mt-10 max-md:max-w-full"
             />
           </div>
-          <article className="flex flex-col ml-5 w-[46%] max-md:ml-0 max-md:w-full">
-            <div className="flex flex-col self-stretch px-5 my-auto max-md:mt-10 max-md:max-w-full min-[1704px]:pt-0 pt-12">
-              <h3 className="text-5xl text-teal-500 leading-[60px] max-md:max-w-full max-md:text-4xl max-md:leading-[53px]">
+          <article className="flex flex-col ml-5 w-[46%] max-lg:ml-0 max-lg:w-full max-lg:px-5 max-md:px-0">
+            <div className="flex flex-col self-stretch px-5 my-auto max-lg:mt-10 max-lg:max-w-full min-[1704px]:pt-0 pt-12">
+              <h3 className="text-5xl text-teal-500 leading-[60px] max-lg:max-w-full max-lg:leading-[53px] text-center">
                 Ersoy Kumsuz Dental Surgeon
               </h3>
-              <p className="mt-8 text-base leading-8 text-stone-500 max-md:max-w-full">
+              <p className="mt-8 text-base leading-8 text-stone-500 max-lg:max-w-full">
                 We aim to provide first class dental care in a relaxed yet
                 professional atmosphere with competitive affordable pricing.
               </p>
-              <p className="mt-8 text-base leading-8 text-stone-500 max-md:max-w-full">
+              <p className="mt-8 text-base leading-8 text-stone-500 max-lg:max-w-full">
                 We are located on the corner of Helena st and Auburn Rd in
                 Auburn and have been offering Dental Services in the area since
                 2002. We aim to provide the highest level of treatment at very
@@ -47,11 +74,14 @@ export default function Home() {
                 available to all in the community.
               </p>
               <div className="flex flex-col justify-center items-center px-3 py-2 mt-9 max-md:pr-5 max-md:max-w-full">
-                <img
+                <Image
                   loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/29cdda9c05d019c9b56d417e467b56e9eff61231b3a7ca42b698aa1ec54a7e63?apiKey=1c365991cad646539ab14038066c3ab4&"
-                  alt="Dental tools"
-                  className="max-w-full aspect-[2.17] w-[324px]"
+                  src="/bulk-bill.png"
+                  alt="Medicare - we are happy to bulk bill"
+                  className="w-[324px]"
+                  width={100}
+                  height={100}
+                  unoptimized
                 />
               </div>
             </div>

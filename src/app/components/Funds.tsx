@@ -6,7 +6,7 @@ interface FundLogoProps {
 }
 
 const FundLogo: React.FC<FundLogoProps> = ({ logo_number }) => (
-  <div className="flex justify-center max-w-none bg-aqua-thirdary py-6 px-16">
+  <div className="flex justify-center bg-aqua-thirdary py-6 px-16 max-md:py-3 max-md:px-8">
     <Image
       src={`/fund_logos/fund_logo_${logo_number}.png`}
       width={150}

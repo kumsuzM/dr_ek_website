@@ -13,6 +13,7 @@ const InstagramIcon = () => (
     className="flex justify-center items-center px-2.5 my-auto text-xl leading-4 text-center text-white whitespace-nowrap bg-teal-500 rounded-full h-[38px] w-[38px]"
     role="button"
     tabIndex={0}
+    onClick={() => window.open("https://www.instagram.com/dr_kumsuz/?hl=en")}
   >
     <FaInstagram />
   </div>
