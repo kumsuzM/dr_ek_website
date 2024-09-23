@@ -1,5 +1,6 @@
 "use client";
 
+import { sendEmail } from "@/actions/sendEmail";
 import React from "react";
 import {
   RegisterOptions,
@@ -7,8 +8,9 @@ import {
   UseFormRegister,
   useForm,
 } from "react-hook-form";
+import { toast } from "sonner";
 
-type FormFields = {
+export type FormFields = {
   firstName: string;
   lastName: string;
   email: string;
@@ -71,12 +73,23 @@ const ContactForm = () => {
     register,
     handleSubmit,
     formState: { errors, isSubmitting, isValid },
-    //reset,
+    reset,
   } = useForm<FormFields>({ mode: "onChange" });
 
   const onSubmit: SubmitHandler<FormFields> = async (data) => {
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    console.log(data);
+    try {
+      const result = await sendEmail(data);
+
+      if (result.success) {
+        toast.success("Email sent successfully!");
+        reset(); // Reset the form on successful submission
+      } else {
+        toast.error("Failed to send email. Please try again.");
+      }
+    } catch (error) {
+      console.error("Error sending email:", error);
+      toast.error("An unexpected error occurred. Please try again later.");
+    }
   };
 
   return (

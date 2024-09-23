@@ -76,7 +76,7 @@ const Footer = () => {
         ))}
       </nav>
       <div className="text-center self-stretch px-16 py-7 mt-20 w-full sm:text-lg text-white bg-black max-md:px-5 max-md:mt-10 max-md:max-w-full">
-        © Copyright 2017. All Rights Reserved - Dr Ersoy Kumsuz
+        © Copyright 2024. All Rights Reserved - Dr Ersoy Kumsuz
       </div>
     </footer>
   );
