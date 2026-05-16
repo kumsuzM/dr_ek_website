@@ -41,7 +41,7 @@ export default function Services() {
     <PageLayout title="Services">
       <Image
         loading="lazy"
-        src="/merged.png"
+        src="/merged.jpg"
         height={100}
         width={100}
         alt="Services overview"
