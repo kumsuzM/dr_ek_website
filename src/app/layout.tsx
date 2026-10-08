@@ -3,7 +3,6 @@ import "./globals.css";
 import { Footer, Navbar } from "@/app/components";
 import localFont from "next/font/local";
 import Providers from "./providers";
-import Script from "next/script";
 
 const bookAntiqua = localFont({
   src: "../fonts/bookantiqua.ttf",
@@ -29,10 +28,6 @@ export default function RootLayout({
             <Footer />
           </div>
         </Providers>
-        <Script
-          src="https://widget.dentalflo.ai/embed.js?tenantId=xCl6KKbJemXxJtUgql9kp&widgetId=Y7frM8PYMnnSYd75KEtpb"
-          strategy="afterInteractive"
-        />
       </body>
     </html>
   );
